@@ -1,9 +1,11 @@
 function setup() {
-  createCanvas(400, 400);
-  createSprite(100,100,20,20);
+  createCanvas(1000, 400);
+  
 }
 
 function draw() {
-  background(220);
+  background(World.mouseX,World.mouseY,World.mouseX/World.mouseY);
+  fill("purple");
+  ellipse(World.mouseX,World.mouseY,30,30);
   drawSprites();
 }
